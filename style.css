@@ -1,0 +1,182 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Vazir", Tahoma, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+    }
+
+    /* کانتینر موبایل */
+    .container {
+      width: 640px;
+      position: relative;
+      min-height: 100vh;
+    }
+
+    /* هدر بالا */
+    header {
+      background: #F0F2FE;
+      color: #053E98;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    header span {
+      color: #f8b400;
+      font-weight: bold;
+    }
+.overflow{
+  overflow-y: scroll;
+}
+    /* حساب میلی */
+    .account {
+      padding: 15px;
+    }
+    .navbar{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    .navbar button{
+      height: 40px;
+      width: 60px;
+      border-radius: 10px;
+      border: none;
+      color: #4C9A46;
+      background-color: #EBFFEE;
+    }
+
+    .account-box {
+      background: #0a2e9c;
+      color: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .account-box h3 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .account-box p {
+      font-size: 14px;
+      margin: 10px ;
+    }
+
+    /* دکمه‌های دایره‌ای */
+    .actions {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .action {
+      font-size: 13px;
+      color: #333;
+    }
+
+    .action i {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 55px;
+      height: 55px;
+      background: #f2f2f2;
+      border-radius: 50%;
+      margin: auto;
+      margin-bottom: 6px;
+      font-size: 18px;
+      color: #0a2e9c;
+    }
+
+    /* بنر تبلیغاتی */
+  
+.slider {
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.6s ease;
+}
+input[type=radio] {
+  display: none;
+}
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+#r1:checked ~ .slides { transform: translateX(0%); }
+#r2:checked ~ .slides { transform: translateX(-100%); }
+#r3:checked ~ .slides { transform: translateX(-200%); }
+.nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.nav label {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+    /* نمودار قیمت */
+    .chart {
+      margin: 0 15px 80px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      font-size: 14px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .chart .price {
+      margin-top: 8px;
+      color: green;
+      font-weight: bold;
+    }
+
+    /* نوبار پایین */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      width: 640px;
+      background: #fff;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .bottom-nav div {
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .bottom-nav i {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .bottom-nav .active {
+      color: #0a2e9c;
+      font-weight: bold;
+    }
